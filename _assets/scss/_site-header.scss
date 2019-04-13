@@ -1,0 +1,65 @@
+.inner {
+    display: flex;
+    justify-content: space-between;
+}
+
+.site-header,
+.site-title a{
+    color: var(--color-main-link);
+    text-shadow: 1px 1px 1px grey;
+}
+
+.inner img {
+    margin: 1rem 0.8rem 0 2rem;
+}
+
+.header-content{
+    margin-top: 25rem;
+    letter-spacing: 0.1rem;
+    text-shadow: 1px 1px 1px grey;
+}
+
+.site-header nav {
+    margin: 1rem 0;
+    font-size: 1.5em;
+}
+
+header h1{
+    margin-top: 30rem;
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 0.3rem;
+    text-shadow: 1px 1px 1px grey;
+    position: relative;
+}
+
+.site-header.banner {
+    position: relative;
+    background-image: url(https://scontent.fsof3-1.fna.fbcdn.net/v/t1.0-9/19875426_10155500867784399_3910616384988455556_n.jpg?_nc_cat=106&_nc_ht=scontent.fsof3-1.fna&oh=cb6342968aae34608c8bb17859bd542c&oe=5D353FC2);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.site-header.banner_destination {
+    position: relative;
+    background-image: url(https://scontent.fsof3-1.fna.fbcdn.net/v/t1.0-9/28958709_10156170852264399_5303125663788769392_n.jpg?_nc_cat=101&_nc_ht=scontent.fsof3-1.fna&oh=663deee77d18c9445d682b5704854a15&oe=5D3CF511);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.site-header.banner:after,
+.site-header.banner_destination:after{
+    display: block;
+    content: '';
+}
+
+.site-header.banner.size-large:after,
+.site-header.banner_destination.size-large:after{
+    padding-top: calc(9 / 16  * 100% / 2);
+}
+
+.site-header.banner.size-small:after,
+.site-header.banner_destination.size-small:after{
+    padding-top: calc( 9 / 32 * 100% );
+}

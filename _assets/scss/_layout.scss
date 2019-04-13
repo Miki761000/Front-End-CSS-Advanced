@@ -1,0 +1,22 @@
+.site-content {
+  padding: 2rem 0;
+}
+
+
+.fadeInUp {
+  animation-name: fadeInUp;
+}
+
+@keyframes fadeInUp{
+  0% {
+    opacity: 0;
+    visibility: hidden;
+    transform: translate3d(0, 40px, 0);
+  }
+  100% {
+    visibility: visible;
+    opacity: 1;
+    transform: none;
+  }
+}
+

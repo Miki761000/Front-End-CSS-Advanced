@@ -1,0 +1,80 @@
+.container {
+    background: #EBF0F0;
+    width: 70%;
+    margin: 5rem auto;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.container section {
+    width: 100%;
+}
+
+.container section p {
+    padding: 0 0 0 0.3rem;
+}
+
+input {
+    background: #FFF;
+    border: none;
+    outline: none;
+    font: 16px/1.5 Monserrat, sans-serif;
+    width: 80%;
+    border-radius: 0.4rem;
+    font-weight: bold;
+}
+
+input {
+    padding: 0.5rem 0.5rem 0.5rem 4rem;
+}
+
+.form p {
+    position: relative;
+}
+
+.form i {
+    display: flex;
+    font-family: 'Font Awesome 5 Free';
+    position: absolute;
+    top: 10px;
+    left: 2px;
+    z-index: 200;
+    align-items: center;
+    border-right: 1px solid #5C5757;
+    color: #5C5757;
+}
+
+.form i:before {
+    padding: 0 1rem;
+}
+
+input[type="submit"] {
+    padding: 0;
+    background: #0E81CE;
+    color: white;
+    padding: 0.5rem 0;
+    cursor: pointer;
+}
+
+input[type="submit"]:hover {
+    background: #333333;
+}
+
+input:focus+i {
+    color: #0E81CE;
+}
+
+.form p:focus-within:before {
+    color: #0E81CE;
+}
+
+.star {
+    color: red;
+    display: inline-block;
+}
+
+.min-char {
+    font-size: 0.6em;
+    color: #B9BAB5;
+}

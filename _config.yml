@@ -1,0 +1,63 @@
+title: Travel
+email: miki761000@gmail.com
+description:
+baseurl: "/Front-End-CSS-Advanced"
+#baseurl: ""
+url: "" # the base hostname & protocol for your site, e.g. http://example.com
+twitter_username: #jekyllrb
+github_username:  Miki761000
+destination: docs
+
+exclude: [_assets, node_modules, Gemfile, Gemfile.lock, gulpfile.js, package.json, package-lock.json, README.md]
+
+# Build settings
+markdown: kramdown
+plugins:
+  - jekyll-feed
+
+menu:
+  - url: /
+    name: main
+  - url: /destination/
+    name: Destination
+    submenu:
+      - url: /destination/europe/
+        name: Europe
+        submenu:
+          - url: /destination/europe/italy/
+            name: Italy
+          - url: /destination/europe/spain/
+            name: Spain
+          - url: /destination/europe/portugal/
+            name: Portugal
+          - url: /destination/europe/germany/
+            name: Germany
+          - url: /destination/europe/france/
+            name: France
+      - url: /destination/america/
+        name: America
+        submenu:
+          - url: /destination/america/usa/
+            name: USA
+      - url: /destination/otherWorld/
+        name: World
+        submenu:
+          - url: /destination/otherWorld/thailand/
+            name: Thailand
+  - url: /about/
+    name: About
+  - url: /contacts/
+    name: Contacts
+
+
+# Exclude from processing.
+# The following items will not be processed, by default. Create a custom list
+# to override the default setting.
+# exclude:
+#   - Gemfile
+#   - Gemfile.lock
+#   - node_modules
+#   - vendor/bundle/
+#   - vendor/cache/
+#   - vendor/gems/
+#   - vendor/ruby/

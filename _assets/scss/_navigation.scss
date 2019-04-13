@@ -1,0 +1,124 @@
+ul {
+    ul {
+        padding: 0;
+        margin: 0;
+    }
+
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+
+    & > ul {
+        display: flex;
+        @include breakpoint('tablet') {
+            flex-direction: column;
+        }
+    }
+
+    & > li {
+        display: inline-block;
+        list-style: none outside;
+        position: relative;
+        @include breakpoint('laptop') {
+            padding: 0 0.5em;
+        }
+
+        &:hover > .submenu {
+            visibility: visible;
+        }
+
+        & {
+            color: #FFF;
+
+            &:focus,&:hover {
+                background: #000;
+                border-radius: 0.5rem;
+            }
+        }
+
+        .submenu {
+            position: absolute;
+            visibility: hidden;
+            width: auto;
+            padding: 3px 8px;
+
+            li {
+                margin-right: 0;
+            }
+        }
+    }
+
+    a {
+        display: block;
+        padding: 0.5em 1em;
+        text-decoration: none;
+        color: #FFF;
+        background: rgba(0, 0, 0, 0.3);
+        transition: background 0.3s ease-in;
+        outline: none;
+        @include breakpoint('laptop') {
+            border-radius: 0.3em;
+        }
+    }
+
+    @include breakpoint('laptop') {
+        &>ul ul li {
+            opacity: 0;
+            transform: translateY(-2rem);
+            transition: opacity 0.2s ease-in, transform 0.2s ease-out;
+            padding-top: 0.5em;
+        }
+        &>ul ul {
+            display: block;
+            position: absolute;
+            top: 100%;
+            left: 0;
+            z-index: 100;
+            pointer-events: none;
+            border-bottom-left-radius: 0.3em;
+            border-bottom-right-radius: 0.3em;
+            overflow: hidden;
+        }
+        li:hover>ul {
+            pointer-events: all;
+        }
+        li:hover>ul>li {
+            transform: translateY(0);
+            opacity: 1;
+        }
+        li:hover>ul>li:nth-child(2) {
+            transition-delay: 0.08s;
+        }
+        li:hover>ul>li:nth-child(3) {
+            transition-delay: 0.20s;
+        }
+
+    }
+
+    @include breakpoint('tablet') {
+    width: 100%;
+    padding: 2rem 0;
+        @at-root #toggle-main-nav+.site-header & {
+            display: none;
+        }
+        @at-root #toggle-main-nav:checked+.site-header & {
+            display: block;
+        }
+    }
+}
+
+#toggle-main-nav-button {
+    color: #FFF;
+    @include breakpoint('tablet') {
+        display: block;
+    }
+    @include breakpoint('laptop') {
+        display: none;
+    }
+}
+
+#toggle-main-nav {
+    position: absolute;
+    opacity: 0;
+    pointer-events: none;
+}

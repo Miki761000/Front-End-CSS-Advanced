@@ -1,0 +1,58 @@
+.header-text {
+  display: block;
+  text-align: center;
+  color: var(--color-main-bgrd);
+}
+
+section:nth-child(1) h1:after{
+  display: block;
+  content: '';
+  width: 10%;
+  height: 2px;
+  margin: 0.8rem auto;
+  background: rgb(38, 38, 38);
+}
+
+h2, h4 {
+  color: var(--color-main-bgrd);
+  display: block;
+  text-align: center;
+  margin-bottom: 1rem;
+}
+
+p {
+  color: var(--color-main-bgrd);
+}
+
+
+button{
+  margin: auto 0 0.8rem auto;
+  background: #FFF;
+  padding: 0.8rem 1rem;
+  border-radius: 0.5rem;
+  border: 1px solid black;
+  font-weight: bold;
+  display: block;
+  z-index: -1;
+
+}
+
+button:hover:before {
+  opacity: 1;
+  color: red;
+}
+
+button:hover{
+  transform: scale(1.2);
+  z-index: 5;
+  border: 1px solid red;
+}
+
+button a {
+  color: var(--color-main-bgrd);
+}
+
+button a:hover{
+  color: red;
+}
+

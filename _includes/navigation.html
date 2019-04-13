@@ -1,0 +1,37 @@
+<label id="toggle-main-nav-button"  id="toggle" for="toggle-main-nav">Menu</label>
+<nav class="{{ include.location }}-nav">
+    <ul>
+
+        {% for item in site.menu %}
+        {% if item.url != '/feed.xml' and item.url != '/' %}
+        <li class="{% if page.url == {{ item.url }} %} active {% endif %}">
+            <a href="{{ item.url }}">{{ item.name }}</a>
+
+            {% if item.submenu %}
+            <ul class="submenu">
+                {% for subitem in item.submenu %}
+                <li>
+                    <a href="{{ subitem.url }}">{{ subitem.name }}</a>
+
+                    {% if subitem.submenu %}
+                    <ul class="submenu">
+                        {% for subitem in subitem.submenu %}
+                        <li>
+                            <a href="{{ subitem.url }}">{{ subitem.name }}</a>
+                        </li>
+                        {% endfor %}
+                    </ul>
+                    {% endif %}
+                </li>
+                {% endfor %}
+            </ul>
+            {% endif %}
+        </li>
+
+        {% endif %}
+        {% endfor %}
+
+    </ul>
+</nav>
+
+
