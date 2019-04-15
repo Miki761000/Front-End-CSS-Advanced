@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="/css/styles.css">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
     <link href="https://fonts.googleapis.com/css?family=Work+Sans" rel="stylesheet">
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
 </head>
 
 <body>
@@ -72,16 +73,6 @@
         
         <li class="">
 
-            <a href="/about/">About</a>
-
-            
-        </li>
-
-        
-        
-        
-        <li class="">
-
             <a href="/contacts/">Contacts</a>
 
             
@@ -104,41 +95,75 @@
 
 
     <main class="site-content">
-        <div class="page-box">
+        <p><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2933.0675046225183!2d23.242394315333122!3d42.681112379166606!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40aa9b22bf892e17%3A0x84fe97c488bc8132!2s18%2C+g.k.+Ovcha+kupel+2%2C+Sofia%2C+Bulgaria!5e0!3m2!1sen!2sus!4v1555356759422!5m2!1sen!2sus" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe></p>
+
+<div class="page-box">
     <div class="container">
+        <h1>Q&A</h1>
         <section class="form">
-            <h1>Form</h1>
             <form action="">
-                <label for="username"><span class="star">*</span> Name:</label>
-                <p class="username">
-                    <input type="text" placeholder="Dario Petrov" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Dario Petrov'" />
+                <p class="title">
+                    <input type="text" id ="text" placeholder="title" onfocus="this.placeholder = ''" onblur="this.placeholder = 'title'" />
                     <i class="fas fa-user"></i>
                 </p>
-                <label for="email"><span class="star">*</span> Email:</label>
                 <p class="email">
                     <input type="email" id="email" placeholder="dario@email.com" onfocus="this.placeholder = ''" onblur="this.placeholder = 'dario@email.com'" />
                     <i class="fas fa-envelope"></i>
                 </p>
-                <label for="phone"><span class="star">*</span> Phone Number:</label>
-                <p class="phone">
-                    <input type="text" placeholder="+359 885 445 445" onfocus="this.placeholder = ''" onblur="this.placeholder = '+359 885 445 445'" />
-                    <i class="fas fa-mobile-alt"></i>
+                <p class="comment">
+                    <textarea style="height: 100%; width: 90%; " placeholder="Type your text here" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Type your text here'" id="comment"></textarea>
+                    <i class="fas fa-envelope-open-text"></i>
                 </p>
-                <label for="password"><span class="star">*</span> Password <span class="min-char">(minimum 6 characters):</span></label>
-                <p class="password">
-                    <input type="password" placeholder="********" onfocus="this.placeholder = ''" onblur="this.placeholder = '********'" />
-                    <i class="fas fa-user"></i>
-                </p>
-                <input type="submit" value="Sign up">
+                <input type="button" id="button" value="Send" >
             </form>
         </section>
     </div>
+
+    <div class="block">
+        <h4>Preview your information:</h4>
+        <div class="preview">
+            <p id="infoPreview">
+            </p>
+        </div>
+    </div>
+    <div id="containerPreview">
+    </div>
 </div>
+
+
+    <script>
+        function addItem() {
+            let btn = document.getElementById('button');
+            let itemsListElement = document.getElementById('infoPreview');
+            btn.on('click', onClick);
+
+            function onClick(){
+                itemsListElement.innerText += document.getElementById('text').value;
+                itemsListElement.innerText += '\n';
+                itemsListElement.innerText += document.getElementById('email').value;
+                itemsListElement.innerText += '\n';
+                itemsListElement.innerText += document.getElementById('comment').value;
+            }
+
+        }
+    </script>
+
+
+
+
 
     </main>
 
     <footer class="site-footer">
-        <p><a href="">&copy; Travel by Miki</a></p>
+        <div class="site-footer-div">
+            <p><a href="">&copy; Travel by Miki</a></p>
+
+            <div class="media">
+                <p><a class="fab fa-facebook-f" href="https://www.facebook.com/maria.tumbeva.16"></a></p>
+                <p><a class="fab fa-twitter" href="https://twitter.com/Maria_Tumbeva"></a></p>
+                <p><a class="fas fa-mobile-alt" href="#"> +000 000 000</a></p>
+            </div>
+        </div>
     </footer>
 
     </body>
