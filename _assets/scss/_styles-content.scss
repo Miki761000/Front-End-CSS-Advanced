@@ -25,17 +25,16 @@ p {
 }
 
 
-button{
-  margin: auto 0 0.8rem auto;
+.read-more{
+  display: block;
+  margin: auto 0.8rem 0.8rem auto ;
   background: #FFF;
   padding: 0.8rem 1rem;
   border-radius: 0.5rem;
   border: 1px solid black;
   font-weight: bold;
-  display: block;
-  z-index: -1;
-
 }
+
 
 button:hover:before {
   opacity: 1;
@@ -48,11 +47,14 @@ button:hover{
   border: 1px solid red;
 }
 
-button a {
+button a,
+footer a {
   color: var(--color-main-bgrd);
 }
 
 button a:hover{
   color: red;
 }
+
+
 

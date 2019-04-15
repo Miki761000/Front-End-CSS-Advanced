@@ -1,10 +1,14 @@
-<label id="toggle-main-nav-button"  id="toggle" for="toggle-main-nav">Menu</label>
-<nav class="{{ include.location }}-nav">
+<!--<label id="toggle-main-nav-button" id="toggle" for="toggle-nav">-->
+<!--<label for="toggle-nav">
+    <i class="fas fa-bars"></i>
+    <i class="fas fa-times"></i>-->
+<!--</label>-->
+<nav class="main-nav">
     <ul>
-
         {% for item in site.menu %}
-        {% if item.url != '/feed.xml' and item.url != '/' %}
+        {% if item.url != '/feed.xml'%}
         <li class="{% if page.url == {{ item.url }} %} active {% endif %}">
+
             <a href="{{ item.url }}">{{ item.name }}</a>
 
             {% if item.submenu %}
@@ -33,5 +37,6 @@
 
     </ul>
 </nav>
+
 
 

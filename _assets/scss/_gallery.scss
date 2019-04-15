@@ -60,11 +60,22 @@ ul.gallery img {
     display: block;
     max-width: 100%;
     height: auto;
+    margin: 0 auto 2rem auto;
     background: #fff;
     border-radius: 0.5rem 0.5rem 0 0;
     position: relative;
-    overflow: hidden;
+    /*overflow: hidden;*/
 }
 
+@include breakpoint('phone') {
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+}
 
+@include breakpoint('tablet') {
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+}
 

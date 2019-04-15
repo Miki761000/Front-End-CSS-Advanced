@@ -17,35 +17,33 @@ plugins:
 
 menu:
   - url: /
-    name: main
+    name: Home
   - url: /destination/
     name: Destination
     submenu:
       - url: /destination/europe/
         name: Europe
-        submenu:
-          - url: /destination/europe/italy/
-            name: Italy
-          - url: /destination/europe/spain/
-            name: Spain
-          - url: /destination/europe/portugal/
-            name: Portugal
-          - url: /destination/europe/germany/
-            name: Germany
-          - url: /destination/europe/france/
-            name: France
+        #submenu:
+        # - url: /destination/europe/italy/
+        #    name: Italy
+        #  - url: /destination/europe/spain/
+        #    name: Spain
+        #  - url: /destination/europe/hungary/
+        #    name: Portugal
+        #  - url: /destination/europe/germany/
+        #    name: Germany
+        #  - url: /destination/europe/france/
+        #    name: France
       - url: /destination/america/
         name: America
-        submenu:
-          - url: /destination/america/usa/
-            name: USA
-      - url: /destination/otherWorld/
+        #submenu:
+        #  - url: /destination/america/usa/
+        #    name: USA
+      - url: /destination/world/
         name: World
-        submenu:
-          - url: /destination/otherWorld/thailand/
-            name: Thailand
-  - url: /about/
-    name: About
+        #submenu:
+        #  - url: /destination/otherWorld/thailand/
+        #    name: Thailand
   - url: /contacts/
     name: Contacts
 

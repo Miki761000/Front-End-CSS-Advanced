@@ -9,9 +9,11 @@
     <link rel="stylesheet" href="{{ site.baseurl }}/css/styles.css">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
     <link href="https://fonts.googleapis.com/css?family=Work+Sans" rel="stylesheet">
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
 </head>
 
 <body>
+    <input type="checkbox" id="toggle-nav" />
     {% if page.url == '/' %}
     <header class="site-header banner size-small">
         <div class="inner">
@@ -21,57 +23,38 @@
             {% include navigation.html location="header" %}
             <h1 class="fadeInUp" >Never Stop Exploring.</h1>
         </div>
-
-        </header>
-        {% endif %}
-
-        {% if page.url == '/destination/' %}
-        <header class="site-header banner_destination {% if page.url == '/destination/' %} size-large {% else %} size-small {% endif %}">
-            <div class="inner">
-                <h2 class="site-title"><a href="/"><img src="{{ site.baseurl }}/img/logo.svg" width="25px" height="25px" alt="home">{{ site.title }}</a></h2>
-
-            </div>
-            {% include navigation.html location="header" %}
-            <h1 class="fadeInUp">Destinations</h1>
-        </header>
-            {% endif %}
-            {% if page.url == '/contacts/' %}
-            <header class="site-header banner_destination {% if page.url == '/contacts/' %} size-large {% else %} size-small {% endif %}">
-                <div class="inner">
-                    <h2 class="site-title"><a href="/"><img src="{{ site.baseurl }}/img/logo.svg" width="25px" height="25px" alt="home">{{ site.title }}</a></h2>
-                </div>
-                {% include navigation.html location="header" %}
-                <h1 class="fadeInUp">Contacts</h1>
-            </header>
-                {% endif %}
-                {% if page.url == '/about/' %}
-                <header class="site-header banner_destination {% if page.url == '/about/' %} size-large {% else %} size-small {% endif %}">
-                    <div class="inner">
-                        <h2 class="site-title"><a href="/"><img src="{{ site.baseurl }}/img/logo.svg" width="25px" height="25px" alt="home">{{ site.title }}</a></h2>
-                    </div>
-                    {% include navigation.html location="header" %}
-                    <h1 class="fadeInUp">About</h1>
-                </header>
-                {% endif %}
-
-    {% if page.url == '/destination/europe/italy' %}
-    <header class="site-header banner_destination ">
-        {% include navigation.html location="header" %}
-        <h1 class="fadeInUp">Destinations</h1>
     </header>
+
+    {% else %}
+    <header class="site-header banner_other size-small">
+        <div class="inner">
+            <h2 class="site-title"><a href="/"><img src="{{ site.baseurl }}/img/logo.svg" width="25px" height="25px" alt="home">{{ site.title }}</a></h2>
+        </div>
+        <div class="site-header" data-animate-effect="fadeInUp">
+            {% include navigation.html location="header" %}
+            <h1></h1>
+        </div>
+    </header>
+
     {% endif %}
+
 
     <main class="site-content">
         {{ content }}
     </main>
 
     <footer class="site-footer">
-        {% include navigation-footer.html location="footer" %}
+        <div class="site-footer-div">
+            <p><a href="{{ site.baseurl }}">&copy; Travel by Miki</a></p>
 
-        <p>&copy; Travel by Miki</p>
-
+            <div class="media">
+                <p><a class="fab fa-facebook-f" href="https://www.facebook.com/maria.tumbeva.16"></a></p>
+                <p><a class="fab fa-twitter" href="https://twitter.com/Maria_Tumbeva"></a></p>
+                <p><a class="fas fa-mobile-alt" href="#"> +000 000 000</a></p>
+            </div>
+        </div>
     </footer>
 
-</body>
+    </body>
 
 </html>
