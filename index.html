@@ -7,43 +7,13 @@ title: Travel
 </section>
 
 <ul class="gallery">
+    {% for image in site.photo_gallery_home %}
     <li>
-        <h2 class="fadeInUp">Europe</h2>
-        <p><a href="#"><img src="https://scontent.fsof3-1.fna.fbcdn.net/v/t1.0-9/41810151_10156621847364399_6824295857559437312_n.jpg?_nc_cat=100&_nc_ht=scontent.fsof3-1.fna&oh=cd77d6b1d37fe72dcafde2b0a5765322&oe=5D5058F5&w=512&q=80"></a></p>
-        <h4>Paris, France</h4>
-        <p>Art is highly regarded in France and France is known for the art collections in museums in their country. The most famous art gallery in the world, The Louvre, is located in Paris, France. It is home to the Mona Lisa and Venus de Milo. Many fashion houses are located in Paris.</p>
-        <div class="button">
-            <button class="read-more">
-                <a href="{{ site.baseurl }}/destination/europe/france.html">View More</a>
-            </button>
-        </div>
+        <a href="{{ site.baseurl }}{{ image.link }}">
+            <img src="{{ image.image_path }}" alt="{{ image.title}}"/>
+        </a>
     </li>
-    <li class="gallery">
-        <h2 class="fadeInUp">America</h2>
-        <p><a href="#"><img src="https://scontent.fsof3-1.fna.fbcdn.net/v/t1.0-9/19247859_10155445750624399_7712567870308612829_n.jpg?_nc_cat=102&_nc_ht=scontent.fsof3-1.fna&oh=2b165c79e0a6b860151b4a57805a2d24&oe=5D450925&w=512&q=80"></a></p>
-        <h4>San Francisko, USA</h4>
-        <p>San Francisco, in northern California, is a hilly city on the tip of a peninsula surrounded by the Pacific Ocean and San Francisco Bay. It's known for its year-round fog, iconic Golden Gate Bridge, cable cars and colorful Victorian houses. In the bay sits Alcatraz Island.</p>
-        <div class="button">
-            <button class="read-more">
-                <a href="{{ site.baseurl }}/destination/america/usa.html">View More</a>
-            </button>
-        </div>
-    </li>
-    <li  class="gallery">
-        <h2 class="fadeInUp">World</h2>
-        <p><a href="#"><img src="https://scontent.fsof3-1.fna.fbcdn.net/v/t1.0-9/29067120_10156179350334399_7246958926241017162_n.jpg?_nc_cat=105&_nc_ht=scontent.fsof3-1.fna&oh=45727e518f3b88421346f1efbb56d77c&oe=5D329189&w=512&q=80"></a></p>
-        <h4>Phi-Phi, Thailand</h4>
-        <p>"Thai" means "free", therefore, "Thailand" means "Land of the Free. Thailand is a place with a number of amazing national parks. If you visit this diverse and beautiful country, the national parks in Thailand give you a chance to see some of Thailand’s unspoiled wilderness and wildlife. </p>
-        <div class="button">
-            <!--<button class="home">
-                <a href="{{ site.baseurl }}">Home</a>
-            </button>-->
-            <button class="read-more">
-                <a href="{{ site.baseurl }}/destination/world/thailand.html">View More</a>
-            </button>
-        </div>
-    </li>
-
+    {% endfor %}
 </ul>
 
 

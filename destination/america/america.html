@@ -4,46 +4,16 @@ category: Destination
 permalink: /destination/america/
 ---
 <section>
-    <h1 class="fadeInUp header-text">AMERICA</h1>
+    <h1 class="fadeInUp header-text">USA</h1>
 </section>
 
+
 <ul class="gallery">
+    {% for image in site.photo_gallery_usa %}
     <li>
-        <h2 class="fadeInUp">USA</h2>
-        <p><a href="#"><img src="https://scontent.fsof3-1.fna.fbcdn.net/v/t1.0-9/19424176_10155445751769399_7264114456475013208_n.jpg?_nc_cat=105&_nc_ht=scontent.fsof3-1.fna&oh=f7a96c3580d8f4a219e559ff064b0588&oe=5D348EC2&w=512&q=80"></a></p>
-        <h4>San Francisko</h4>
-        <p>San Francisco, in northern California, is a hilly city on the tip of a peninsula surrounded by the Pacific Ocean and San Francisco Bay. It's known for its year-round fog, iconic Golden Gate Bridge, cable cars and colorful Victorian houses. The Financial District's Transamerica Pyramid is its most distinctive skyscraper. In the bay sits Alcatraz Island, site of the notorious former prison.</p>
-        <div class="button">
-            <button class="read-more">
-                <a href="{{ site.baseurl }}/destination/america/usa.html">View More</a>
-            </button>
-        </div>
+        <a href="{{ site.baseurl }}{{ image.link }}">
+            <img src="{{ image.image_path }}" alt="{{ image.title}}"/>
+        </a>
     </li>
-    <li class="gallery">
-        <h2 class="fadeInUp">USA</h2>
-        <p><a href="#"><img src="https://scontent.fsof3-1.fna.fbcdn.net/v/t1.0-9/19430112_10155452188074399_5988304940841451315_n.jpg?_nc_cat=100&_nc_ht=scontent.fsof3-1.fna&oh=089d2d760629f0f5ac43207bbd8c3d50&oe=5D3E33B0&w=512&q=80"></a></p>
-        <h4>Los Angeles</h4>
-        <p>Los Angeles is a sprawling Southern California city and the center of the nation’s film and television industry. Near its iconic Hollywood sign, studios such as Paramount Pictures, Universal and Warner Brothers offer behind-the-scenes tours. On Hollywood Boulevard, TCL Chinese Theatre displays celebrities’ hand- and footprints, the Walk of Fame honors thousands of luminaries and vendors sell maps to stars’ homes.</p>
-        <div class="button">
-            <button class="read-more">
-                <a href="{{ site.baseurl }}/destination/america/usa.html">View More</a>
-            </button>
-        </div>
-    </li>
-    <li  class="gallery">
-        <h2 class="fadeInUp">USA</h2>
-        <p><a href="#"><img src="https://scontent.fsof3-1.fna.fbcdn.net/v/t1.0-9/19429739_10155456096484399_2234905781114713758_n.jpg?_nc_cat=111&_nc_ht=scontent.fsof3-1.fna&oh=0a3cc8cedcd36bdf7a159edf9c0e8ebe&oe=5D36FB8D&w=512&q=80"></a></p>
-        <h4>Las Vegas</h4>
-        <p>As with most major metropolitan areas, the name of the primary city ("Las Vegas" in this case) is often used to describe areas beyond official city limits. In the case of Las Vegas, this especially applies to the areas on and near the Las Vegas Strip, which is actually located within the unincorporated communities of Paradise and Winchester.</p>
-        <div class="button">
-            <!--<button class="home">
-                <a href="{{ site.baseurl }}">Home</a>
-            </button>-->
-            <button class="read-more">
-                <a href="{{ site.baseurl }}/destination/america/usa.html">View More</a>
-            </button>
-        </div>
-    </li>
-
-
+    {% endfor %}
 </ul>

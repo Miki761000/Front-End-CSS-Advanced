@@ -18,34 +18,81 @@ plugins:
 menu:
   - url: /
     name: Home
-  - url: /destination/
+  - url: /destination
     name: Destination
     submenu:
-      - url: /destination/europe/
+      - url: /destination/europe
         name: Europe
-        #submenu:
-        # - url: /destination/europe/italy/
-        #    name: Italy
-        #  - url: /destination/europe/spain/
-        #    name: Spain
-        #  - url: /destination/europe/hungary/
-        #    name: Portugal
-        #  - url: /destination/europe/germany/
-        #    name: Germany
-        #  - url: /destination/europe/france/
-        #    name: France
-      - url: /destination/america/
-        name: America
-        #submenu:
-        #  - url: /destination/america/usa/
-        #    name: USA
-      - url: /destination/world/
-        name: World
-        #submenu:
-        #  - url: /destination/otherWorld/thailand/
-        #    name: Thailand
-  - url: /contacts/
+        submenu:
+          - url: /destination/europe/italy.html
+            name: Italy
+          - url: /destination/europe/spain.html
+            name: Spain
+          - url: /destination/europe/hungary.html
+            name: Portugal
+          - url: /destination/europe/germany.html
+            name: Germany
+          - url: /destination/europe/france.html
+            name: France
+      - url: /destination/america
+        name: USA
+      - url: /destination/world
+        name: Thailand
+  - url: /contacts
     name: Contacts
+
+
+photo_gallery_home:
+  - image_path: /img/france/paris2.JPG
+    title: Paris
+  - image_path: /img/usa/SanFrancisko2.JPG
+    title: San Francisko
+  - image_path: /img/thailand/phiPhi2.JPG
+    title: Phi-Phi
+
+photo_gallery_europe:
+  - image_path: /img/spain/Sevila.JPG
+    title: Seville
+  - image_path: /img/italy/Rome3.JPG
+    title: Rome
+  - image_path: /img/germany/Berlin.JPG
+    title: Berlin
+  - image_path: /img/hungary/Budapeshta.JPG
+    title: Budapeshta
+  - image_path: /img/france/versaille.JPG
+    title: Versaille
+  - image_path: /img/portugal/Lisbon.JPG
+    title: Lisbon
+
+photo_gallery_usa:
+  - image_path: /img/usa/sanFrancisko3.png
+    title: San Francisko
+  - image_path: /img/usa/SanFrancisko.JPG
+    title: San Francisko
+  - image_path: /img/usa/LosAngelis.JPG
+    title: Los Angelis
+  - image_path: /img/usa/GrandKanyon2.JPG
+    title: Grand Kanyon
+  - image_path: /img/usa/LasVegas2.JPG
+    title: Las Vegas
+  - image_path: /img/usa/LasVegas.JPG
+    title: Las Vegas
+
+photo_gallery_thailand:
+  - image_path: /img/thailand/Bangkog.JPG
+    title: Bangkog
+  - image_path: /img/thailand/Ayutthaya2.JPG
+    title: Ayutthaya
+  - image_path: /img/thailand/jamesBondIsland2.JPG
+    title: James Bond Island
+  - image_path: /img/thailand/phiPhi.JPG
+    title: Phi-Phi
+  - image_path: /img/thailand/SimilanIsland.JPG
+    title: Similand Island
+  - image_path: /img/thailand/SimilanIsland2.JPG
+    title: Similand Island
+
+
 
 
 # Exclude from processing.
