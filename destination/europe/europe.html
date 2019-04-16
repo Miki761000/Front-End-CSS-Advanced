@@ -10,7 +10,7 @@ permalink: /destination/europe/
 <ul class="gallery">
     {% for image in site.photo_gallery_europe %}
     <li>
-        <a href="{{ site.baseurl }}{{ image.link }}">
+        <a href="{{ site.baseurl }}{{ site.baseurl }}{{ image.link }}">
             <img src="{{ image.image_path }}" alt="{{ image.title}}"/>
         </a>
     </li>
