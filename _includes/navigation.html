@@ -9,13 +9,13 @@
         {% if item.url != '/feed.xml'%}
         <li class="{% if page.url == {{ item.url }} %} active {% endif %}">
 
-            <a href="{{ item.url }}">{{ item.name }}</a>
+            <a href="{{ site.baseurl }}{{ item.url }}">{{ item.name }}</a>
 
             {% if item.submenu %}
             <ul class="submenu">
                 {% for subitem in item.submenu %}
                 <li>
-                    <a href="{{ subitem.url }}">{{ subitem.name }}</a>
+                    <a href="{{ site.baseurl }}{{ item.url }}{{ subitem.url }}">{{ subitem.name }}</a>
 
                     {% if subitem.submenu %}
                     <ul class="submenu">
