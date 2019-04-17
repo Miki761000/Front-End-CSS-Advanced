@@ -263,79 +263,80 @@ footer a {
 button a:hover {
   color: red; }
 
-ul.gallery {
+div.gallery {
+  display: grid;
+  grid-template-columns: repeat(3, 32%);
+  grid-gap: 3em;
   padding: 0;
-  margin: 5rem 4rem 5rem 4rem;
+  align-content: center;
+  margin: 3rem 4rem 3rem 4rem; }
+
+.location-listing {
+  position: relative; }
+
+.location-image {
+  line-height: 1rem;
+  overflow: hidden; }
+
+.location-image img {
+  display: block;
+  width: 100%;
+  max-width: 1000px;
+  height: auto;
+  -webkit-filter: blur(0px);
+          filter: blur(0px);
+  transition: -webkit-filter 0.3s ease-in;
+  transition: filter 0.3s ease-in;
+  transition: filter 0.3s ease-in, -webkit-filter 0.3s ease-in;
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+  margin: 0 auto; }
+
+.location-image p {
   display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between; }
+  overflow: hidden;
+  line-height: 1.1em; }
 
-ul.gallery li {
-  flex: 0 1 32%;
-  display: block;
-  position: relative;
-  list-style: none outside;
-  margin-bottom: 2%;
-  padding: 1rem;
-  background: #FFF;
-  box-shadow: 0 0 1.9rem 0 rgba(0, 0, 0, 0.2);
-  transition: -webkit-transform 0.2s ease-in;
-  transition: transform 0.2s ease-in;
-  transition: transform 0.2s ease-in, -webkit-transform 0.2s ease-in;
-  border-radius: 0.5rem; }
-
-ul.gallery li:before {
-  display: block;
-  content: '';
+.location-title {
+  font-size: 1.5em;
+  font-weight: bold;
+  text-decoration: none;
+  z-index: 1;
   position: absolute;
+  height: 100%;
+  width: 100%;
   top: 0;
   left: 0;
-  right: 0;
-  bottom: 0;
-  z-index: -1;
-  box-shadow: 0 0 1.9rem 0 rgba(0, 0, 0, 0.2);
   opacity: 0;
-  transition: opacity 0.3s ease-in-out;
-  border-radius: 0.5rem; }
+  transition: opacity .5s;
+  background: rgba(255, 255, 255, 0.9);
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center; }
 
-ul.gallery li:hover:before {
+.location-listing:hover .location-title {
   opacity: 1; }
 
-ul.gallery li:hover {
-  -webkit-transform: scale(1.3);
-          transform: scale(1.3);
+.location-listing:hover .location-image img {
+  -webkit-filter: blur(2px);
+          filter: blur(2px);
+  -webkit-transform: scale(1.7);
+          transform: scale(1.7);
   z-index: 5;
   background: #FFF; }
 
-ul.gallery li a {
-  display: block;
-  position: relative;
-  overflow: hidden;
-  background: #FFF; }
-
-ul.gallery li a:before {
+.location-listing:before a {
   display: block;
   content: ''; }
 
-ul.gallery img {
-  display: block;
-  max-width: 100%;
-  height: auto;
-  margin: 0 auto 2rem auto;
-  background: #fff;
-  border-radius: 0.5rem 0.5rem 0 0;
-  position: relative;
-  /*overflow: hidden;*/ }
-
-@media (max-width: 800px) {
-  display: flex;
-  justify-content: space-around;
-  flex-direction: column; }
-
-@media (max-width: 1100px) {
-  display: flex;
-  justify-content: space-around;
-  flex-direction: column; }
+/* for touch screen devices */
+@media (hover: none) {
+  .location-title {
+    opacity: 1; }
+  .location-image img {
+    -webkit-filter: blur(1px);
+            filter: blur(1px); } }
 
 .page-box {
   background: #EBF0F0;
@@ -455,7 +456,7 @@ ul li {
   margin: 1rem 0.8rem 0 2rem; }
 
 .header-content {
-  margin-top: 5rem;
+  /*margin-top: 5rem;*/
   letter-spacing: 0.1rem;
   text-shadow: 1px 1px 1px grey; }
 
@@ -466,7 +467,8 @@ ul li {
   justify-content: center; }
 
 header h1 {
-  font-size: 3.5em;
+  margin-top: 20%;
+  font-size: 3em;
   text-align: center;
   text-transform: uppercase;
   letter-spacing: 0.3rem;
@@ -478,7 +480,10 @@ header h1 {
   background-image: url(https://scontent.fsof3-1.fna.fbcdn.net/v/t1.0-9/19875426_10155500867784399_3910616384988455556_n.jpg?_nc_cat=106&_nc_ht=scontent.fsof3-1.fna&oh=cb6342968aae34608c8bb17859bd542c&oe=5D353FC2);
   background-position: center;
   background-repeat: no-repeat;
-  background-size: cover; }
+  background-size: cover;
+  max-height: 2000vh;
+  /*width: 100%;*/
+  width: auto; }
 
 .site-header.banner_other {
   position: relative;
@@ -486,7 +491,9 @@ header h1 {
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  height: 50vh; }
+  max-height: 30vh;
+  /*width: 100%;*/
+  width: auto; }
 
 .site-header.banner:after,
 .site-header.banner_other:after {
@@ -504,7 +511,17 @@ header h1 {
 @media (min-width: 1101px) {
   header h1 {
     font-size: 3.5em;
-    margin-top: 20rem;
+    margin-top: 20%;
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 0.3rem;
+    text-shadow: 1px 1px 1px grey;
+    position: relative; } }
+
+@media (max-width: 800px) {
+  header h1 {
+    font-size: 3.5em;
+    margin-top: 20%;
     text-align: center;
     text-transform: uppercase;
     letter-spacing: 0.3rem;

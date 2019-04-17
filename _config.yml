@@ -28,7 +28,7 @@ menu:
             name: Italy
           - url: /destination/europe/spain.html
             name: Spain
-          - url: /destination/europe/hungary.html
+          - url: /destination/europe/portugal.html
             name: Portugal
           - url: /destination/europe/germany.html
             name: Germany
@@ -44,56 +44,165 @@ menu:
 
 photo_gallery_home:
   - image_path: /img/france/paris2.JPG
-    title: Paris
+    title: Paris, Europe
+    description: Paris, France's capital, is a major European city and a global center for art, fashion, gastronomy and culture.
   - image_path: /img/usa/SanFrancisko2.JPG
-    title: San Francisko
+    title: San Francisko, USA
+    description:
   - image_path: /img/thailand/phiPhi2.JPG
-    title: Phi-Phi
+    title: Phi-Phi, Thailand
+    description:
 
 photo_gallery_europe:
   - image_path: /img/spain/Sevila.JPG
     title: Seville
+    description:
   - image_path: /img/italy/Rome3.JPG
     title: Rome
+    description:
   - image_path: /img/germany/Berlin.JPG
     title: Berlin
+    description:
   - image_path: /img/hungary/Budapeshta.JPG
     title: Budapeshta
+    description:
   - image_path: /img/france/versaille.JPG
     title: Versaille
+    description:
   - image_path: /img/portugal/Lisbon.JPG
     title: Lisbon
+    description:
 
 photo_gallery_usa:
   - image_path: /img/usa/sanFrancisko3.png
     title: San Francisko
+    description:
   - image_path: /img/usa/SanFrancisko.JPG
     title: San Francisko
+    description:
   - image_path: /img/usa/LosAngelis.JPG
     title: Los Angelis
+    description:
   - image_path: /img/usa/GrandKanyon2.JPG
     title: Grand Kanyon
+    description:
   - image_path: /img/usa/LasVegas2.JPG
     title: Las Vegas
+    description:
   - image_path: /img/usa/LasVegas.JPG
     title: Las Vegas
+    description:
 
 photo_gallery_thailand:
   - image_path: /img/thailand/Bangkog.JPG
     title: Bangkog
+    description:
   - image_path: /img/thailand/Ayutthaya2.JPG
     title: Ayutthaya
+    description:
   - image_path: /img/thailand/jamesBondIsland2.JPG
     title: James Bond Island
+    description:
   - image_path: /img/thailand/phiPhi.JPG
     title: Phi-Phi
+    description:
   - image_path: /img/thailand/SimilanIsland.JPG
     title: Similand Island
+    description:
   - image_path: /img/thailand/SimilanIsland2.JPG
     title: Similand Island
+    description:
 
+photo_gallery_spain:
+  - image_path: /img/spain/Barcelona.JPG
+    title: Barcelona
+    description:
+  - image_path: /img/spain/Barcelona2.JPG
+    title: Barcelona
+    description:
+  - image_path: /img/spain/Barcelona3.JPG
+    title: Barcelona
+    description:
+  - image_path: /img/spain/Madrid.JPG
+    title: Madrid
+    description:
+  - image_path: /img/spain/Mafrid2.JPG
+    title: Madrid
+    description:
+  - image_path: /img/spain/Mafrid3.JPG
+    title: Madrid
+    description:
+  - image_path: /img/spain/Cordoba.JPG
+    title: Cordoba
+    description:
+  - image_path: /img/spain/Granada.JPG
+    title: Granada
+    description:
+  - image_path: /img/spain/Granada2.JPG
+    title: Granada
+    description:
 
+photo_gallery_portugal:
+  - image_path: /img/portugal/Lisbon.JPG
+    title: Lisbon
+    description:
+  - image_path: /img/portugal/Lisbon2.JPG
+    title: Lisbon
+    description:
+  - image_path: /img/portugal/Lisbon3.JPG
+    title: Lisbon
+    description:
 
+photo_gallery_italy:
+  - image_path: /img/italy/Rome.JPG
+    title: Rome
+    description:
+  - image_path: /img/italy/Rome2.JPG
+    title: Rome
+    description:
+  - image_path: /img/italy/Rome3.JPG
+    title: Rome
+    description:
+
+photo_gallery_germany:
+  - image_path: /img/germany/Berlin.JPG
+    title: Berlin
+    description:
+  - image_path: /img/germany/Berlin3.JPG
+    title: Berlin
+    description:
+  - image_path: /img/germany/Berlin2.JPG
+    title: Berlin
+    description:
+  - image_path: /img/germany/Berlin4.JPG
+    title: Berlin
+    description:
+  - image_path: /img/germany/Dresden.JPG
+    title: Dresden
+    description:
+  - image_path: /img/germany/Dresden2.JPG
+    title: Dresden
+    description:
+  - image_path: /img/germany/Dresden3.JPG
+    title: Dresden
+    description:
+
+photo_gallery_france:
+  - image_path: /img/france/paris.JPG
+    title: Paris
+    description:
+  - image_path: /img/france/paris2.JPG
+    title: Paris
+    description:
+  - image_path: /img/france/paris3.JPG
+    title: Paris
+    description:
+  - image_path: /img/france/versaille.JPG
+    title: Versaille
+    description:
+  - image_path: /img/france/versaille2.JPG
+    title: Versaille
+    description:
 
 # Exclude from processing.
 # The following items will not be processed, by default. Create a custom list

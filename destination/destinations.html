@@ -3,22 +3,22 @@ layout: page
 title: Destination
 permalink: /destination/
 ---
-<h2>Europe</h2>
-<ul>
-    <li>
-        <p>Italy</p>
-        <p>Here are some kinds of animals.</p>
-    </li>
+<section>
+    <h1 class="fadeInUp header-text">The Most Beautiful Places in the World</h1>
+</section>
 
-</ul>
-
-<h2>America</h2>
-<p>This section about giraffes logically belongs inside of the section about animals, even though the structure of the Dom doesn't define it as being nested</p>
-<h2>World</h2>
-<ul>
-    <li>
-        <p>Thailand</p>
-        <p><iframe src="https://www.google.com/maps/d/embed?mid=1HyLZ0eWzLV87VZHHzxX2pBmsObw" width="640" height="480"></iframe></p>
-    </li>
-
-</ul>
+<div class="gallery">
+    {% for image in site.photo_gallery_home %}
+    <article class="location-listing">
+        <a class="location-title" href="#">
+            <h2>{{ site.baseurl }}{{ image.title}}</h2>
+            <p>{{ site.baseurl }}{{ image.description}}</p>
+        </a>
+        <div class="location-image">
+            <a href="{{ site.baseurl }}{{ image.link }}">
+                <img src="{{ image.image_path }}" alt="{{ image.title}}"/>
+            </a>
+        </div>
+    </article>
+    {% endfor %}
+</div>
