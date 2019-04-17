@@ -21,22 +21,22 @@ menu:
   - url: /destination
     name: Destination
     submenu:
-      - url: /destination/europe
+      - url: /destination/europe/index.html
         name: Europe
         submenu:
-          - url: /destination/europe/italy
+          - url: /destination/europe/italy.html
             name: Italy
-          - url: /destination/europe/spain
+          - url: /destination/europe/spain.html
             name: Spain
-          - url: /destination/europe/hungary
+          - url: /destination/europe/hungary.html
             name: Portugal
-          - url: /destination/europe/germany
+          - url: /destination/europe/germany.html
             name: Germany
-          - url: /destination/europe/france
+          - url: /destination/europe/france.html
             name: France
-      - url: /destination/america
+      - url: /destination/america/index.html
         name: USA
-      - url: /destination/world
+      - url: /destination/world/index.html
         name: Thailand
   - url: /contacts
     name: Contacts
