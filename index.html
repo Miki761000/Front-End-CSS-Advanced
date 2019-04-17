@@ -10,7 +10,7 @@ title: Travel
     {% for image in site.photo_gallery_home %}
     <li>
         <a href="{{ site.baseurl }}{{ image.link }}">
-            <img src="{{ image.image_path }}" alt="{{ image.title}}"/>
+            <img src="{{ site.baseurl }}{{ image.image_path }}" alt="{{ image.title}}"/>
         </a>
     </li>
     {% endfor %}
