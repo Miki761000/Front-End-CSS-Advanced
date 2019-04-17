@@ -24,15 +24,15 @@ menu:
       - url: /destination/europe
         name: Europe
         submenu:
-          - url: /destination/europe/italy.html
+          - url: /destination/europe/italy
             name: Italy
-          - url: /destination/europe/spain.html
+          - url: /destination/europe/spain
             name: Spain
-          - url: /destination/europe/hungary.html
+          - url: /destination/europe/hungary
             name: Portugal
-          - url: /destination/europe/germany.html
+          - url: /destination/europe/germany
             name: Germany
-          - url: /destination/europe/france.html
+          - url: /destination/europe/france
             name: France
       - url: /destination/america
         name: USA
