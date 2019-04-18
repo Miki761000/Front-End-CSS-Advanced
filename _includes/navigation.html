@@ -10,13 +10,13 @@
             <ul class="submenu">
                 {% for subitem in item.submenu %}
                 <li>
-                    <a href="{{ subitem.url }}">{{ subitem.name }}</a>
+                    <a href="{{ site.baseurl }}{{ subitem.url }}">{{ subitem.name }}</a>
 
                     {% if subitem.submenu %}
                     <ul class="submenu">
                         {% for subitem in subitem.submenu %}
                         <li>
-                            <a href="{{ subitem.url }}">{{ subitem.name }}</a>
+                            <a href="{{ site.baseurl }}{{ subitem.url }}">{{ subitem.name }}</a>
                         </li>
                         {% endfor %}
                     </ul>
