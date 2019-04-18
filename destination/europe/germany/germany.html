@@ -7,8 +7,8 @@ permalink: /destination/europe/germany
     {% for image in site.photo_gallery_germany %}
     <article class="location-listing">
         <a class="location-title" href="#">
-            <h2>{{ site.baseurl }}{{ image.title}}</h2>
-            <p>{{ site.baseurl }}{{ image.description}}</p>
+            <h2>{{ image.title}}</h2>
+            <p>{{ image.description}}</p>
         </a>
         <div class="location-image">
             <a href="{{ site.baseurl }}{{ image.link }}">
