@@ -43,7 +43,7 @@ menu:
 
 
 photo_gallery_home:
-  - image_path: /img/france/paris2.JPG
+  - image_path: /img/france/paris2.jpg
     title: Paris, Europe
     description: Paris, France's capital, is a major European city and a global center for art, fashion, gastronomy and culture.
   - image_path: /img/usa/SanFrancisko2.JPG
@@ -57,7 +57,7 @@ photo_gallery_europe:
   - image_path: /img/spain/Sevila.JPG
     title: Seville
     description:
-  - image_path: /img/italy/Rome3.JPG
+  - image_path: /img/italy/Rome3.jpg
     title: Rome
     description:
   - image_path: /img/germany/Berlin.JPG
@@ -66,7 +66,7 @@ photo_gallery_europe:
   - image_path: /img/hungary/Budapeshta.JPG
     title: Budapeshta
     description:
-  - image_path: /img/france/versaille.JPG
+  - image_path: /img/france/versaille.jpg
     title: Versaille
     description:
   - image_path: /img/portugal/Lisbon.JPG
@@ -154,13 +154,13 @@ photo_gallery_portugal:
     description:
 
 photo_gallery_italy:
-  - image_path: /img/italy/Rome.JPG
+  - image_path: /img/italy/Rome.jpg
     title: Rome
     description:
-  - image_path: /img/italy/Rome2.JPG
+  - image_path: /img/italy/Rome2.jpg
     title: Rome
     description:
-  - image_path: /img/italy/Rome3.JPG
+  - image_path: /img/italy/Rome3.jpg
     title: Rome
     description:
 
@@ -188,19 +188,19 @@ photo_gallery_germany:
     description:
 
 photo_gallery_france:
-  - image_path: /img/france/paris.JPG
+  - image_path: /img/france/paris.jpg
     title: Paris
     description:
-  - image_path: /img/france/paris2.JPG
+  - image_path: /img/france/paris2.jpg
     title: Paris
     description:
-  - image_path: /img/france/paris3.JPG
+  - image_path: /img/france/paris3.jpg
     title: Paris
     description:
-  - image_path: /img/france/versaille.JPG
+  - image_path: /img/france/versaille.jpg
     title: Versaille
     description:
-  - image_path: /img/france/versaille2.JPG
+  - image_path: /img/france/versaille2.jpg
     title: Versaille
     description:
 
