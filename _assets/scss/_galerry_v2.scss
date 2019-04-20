@@ -1,0 +1,118 @@
+.site-content{
+  background-color: white;
+  overflow: hidden;
+}
+
+.country{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  margin-bottom: 2rem;
+}
+section{
+  background-color: white;
+}
+.container_ {
+  margin-top: 3rem;
+  display: flex;
+  justify-content: center;
+}
+
+.thumbnails{/*
+  display: grid;
+  grid-template-rows: 50px;
+  grid-gap: 0;*/
+  align-content: center;
+  line-height: 1em;
+
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  grid-area: content;
+  min-height: 0;
+  max-height: 1200px;
+  min-width: 0;
+  padding: 2px;
+  overflow-y: scroll;
+}
+
+.thumbnails div {
+  flex: auto;
+}
+
+.thumbnails a {
+  display: block;
+}
+
+.thumbnails img {
+  width: 30vmin;
+  height: 20vmin;
+  object-fit: cover;
+  margin-bottom: 0;
+  /*object-position: top;*/
+  overflow-x: hidden;
+  overflow-y: scroll;
+}
+
+.slides {
+  margin-top: 0.1rem;
+  overflow: hidden;
+  width: 75vmin;
+  height: 100vmin;
+}
+
+.slides div {
+  width: 75vmin;
+  height: 100vmin;
+  position: absolute;
+  z-index: 1;
+  list-style-type: none;
+  background-color: white;
+}
+
+.slides img {
+  width: 75vmin;
+  height: auto;
+  object-fit: cover;
+  object-position: top;
+  background-color: white;
+}
+
+.slides div:target {
+  z-index: 3;
+  animation: slide 1s 1;
+}
+
+.slides div:not(target) {
+  animation: hidden 1s 1;
+}
+
+@keyframes slide {
+  0%{
+    transform: translateX(-100%);
+  }
+  100%{
+    transform: translateX(0%);
+  }
+}
+
+@keyframes hidden {
+  0%{
+    z-index: 2;
+  }
+  100%{
+    z-index: 2;
+  }
+}
+
+
+ /*for touch screen devices*/
+@media (hover: none) {
+  .location-title-inner {
+    opacity: 1;
+  }
+  .location-image-inner img {
+    filter: blur(1px);
+  }
+}
+

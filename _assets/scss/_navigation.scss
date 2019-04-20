@@ -1,7 +1,7 @@
-ul {
+.main-nav ul {
     display: flex;
-    flex-direction: row;
-    justify-content: center;
+    flex-diresction: row;
+    justify-content: left;
 
     & > li {
         display: inline-block;
@@ -46,44 +46,49 @@ ul {
 }
 
 
-ul ul {
+.main-nav ul ul {
     display: flex;
     flex-direction: column;
 }
 
-ul ul li {
+.main-nav ul ul li {
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     margin: 0 0 0.5rem 0 ;
 }
-ul ul ul {
-    display: block;
-    position: absolute;
+.main-nav ul ul ul {
+    display: flex;
+    flex-direction: row;
     top: 0;
     left: 0;
     z-index: 100;
     border-bottom-left-radius: 0.3em;
     border-bottom-right-radius: 0.3em;
     overflow: hidden;
-
+    margin-top: -0.2rem;
 }
-ul ul ul li{
+
+.main-nav ul ul ul li:nth-child(1){
+    margin-left: 11rem;
+}
+
+.main-nav ul ul ul li{
     opacity: 0;
     transform: translateY(-2rem);
     transition: opacity 0.2s ease-in, transform 0.2s ease-out;
-    margin: -0.1rem 0 0.5rem 10.5rem ;
+    /*margin: -0.1rem 0 0.5rem 10.5rem ;*/
     position: relative;
     width: 10rem;
 }
 
-li:hover>ul {
+.main-nav li:hover>ul {
     pointer-events: all;
 }
-li:hover>ul>li {
+.main-nav li:hover>ul>li {
     transform: translateY(0);
     opacity: 1;
 }
-li:hover>ul>li:nth-child(2) {
+.main-nav li:hover>ul>li:nth-child(2) {
     transition-delay: 0.08s;
 }
 
@@ -107,56 +112,38 @@ li:hover>ul>li:nth-child(2) {
     pointer-events: none;
 }
 
-@include breakpoint('phone') {
+@media screen and (max-width: 800px) {
     ul {
         display: flex;
         flex-direction: column;
         color: #FFF;
-        justify-content: center;
-
-        & > li {
-            display: block;
-            list-style-type: none;
-            align-items: center;
-            margin: 0 auto;
-            padding: 0.3rem;
-            text-align: center;
-
-            .submenu {
-                position: absolute;
-                visibility: hidden;
-                opacity: 0;
-            }
-        }
-
-        a {
-            display: block;
-            padding: 0.5em 1em;
-            border-radius: 0;
-        }
-    }
-
+        justify-content: left; }
+    ul > li {
+        display: block;
+        align-items: center;
+        margin: 0 auto;
+        padding: 0.3rem;
+        text-align: center; }
+    ul > li .submenu {
+        position: absolute;
+        visibility: hidden;
+        opacity: 0; }
+    ul a {
+        display: block;
+        padding: 0.5em 1em;
+        border-radius: 0; }
     #toggle-nav {
         position: absolute;
         pointer-events: none;
-        opacity: 0;
-    }
-
+        opacity: 0; }
     #toggle-nav:checked {
-        display: block;
-    }
-
+        display: block; }
     .site-header label i.fa-times {
-        display: none;
-    }
-
+        display: none; }
     #toggle-nav:checked + label i.fa-times {
-        display: block;
-    }
-
+        display: block; }
     #toggle-nav:checked + label i.fa-bars {
-        display: none;
-    }
-
+        display: none; }
 }
+
 

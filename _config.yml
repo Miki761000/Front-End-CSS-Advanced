@@ -48,10 +48,10 @@ photo_gallery_home:
     description: Paris, France's capital, is a major European city and a global center for art, fashion, gastronomy and culture.
   - image_path: /img/usa/SanFrancisko2.JPG
     title: San Francisko, USA
-    description:
+    description: San Francisco is known for its year-round fog, iconic Golden Gate Bridge, cable cars and colorful Victorian houses.
   - image_path: /img/thailand/phiPhi2.JPG
     title: Phi-Phi, Thailand
-    description:
+    description: The Phi Phi Islands are an island group in Thailand, between the large island of Phuket and the Straits of Malacca coast of Thailand.
 
 photo_gallery_europe:
   - image_path: /img/spain/Sevila.JPG

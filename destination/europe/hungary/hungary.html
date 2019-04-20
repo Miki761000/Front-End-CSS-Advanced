@@ -3,18 +3,24 @@ layout: page
 category: Destination
 permalink: /destination/europe/hungary
 ---
-<div class="gallery">
-    {% for image in site.photo_gallery_hungary %}
-    <article class="location-listing">
-        <a class="location-title" href="#">
-            <h2>{{ image.title}}</h2>
-            <p>{{ image.description}}</p>
-        </a>
-        <div class="location-image">
-            <a href="{{ site.baseurl }}{{ image.link }}">
-                <img src="{{ site.baseurl }}{{ image.image_path }}" alt="{{ image.title}}"/>
-            </a>
+<section>
+    <h1 class="fadeInUp header-text">Hungary</h1>
+</section>
+<div class="container_">
+    <section class="slides">
+        <div id="slide1" class="location-listing-inner">
+            <div class="location-image-inner">
+                <img src="{{ site.baseurl }}/img/hungary/Budapeshta.JPG" alt="Budapeshta"/>
         </div>
-    </article>
-    {% endfor %}
+        <div id="slide2" class="location-listing-inner">
+            <div class="location-image-inner">
+                <img src="{{ site.baseurl }}/img/hungary/Budapeshta2.JPG" alt="Budapeshta"/>
+            </div>
+        </div>
+    </section>
+
+    <section class="thumbnails">
+        <div><a href="#slide1"><img src="{{ site.baseurl }}/img/hungary/Budapeshta.JPG" alt="Budapeshta"/></a></div>
+        <div><a href="#slide2"><img src="{{ site.baseurl }}/img/hungary/Berlin3.JPG" alt="Budapeshta"/></a></div>
+    </section>
 </div>

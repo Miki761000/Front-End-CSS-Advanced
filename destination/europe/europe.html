@@ -4,21 +4,62 @@ category: Destination
 permalink: /destination/europe/
 ---
 <section>
-    <h1 class="fadeInUp header-text">EUROPE</h1>
-</section>
-
-<div class="gallery">
-    {% for image in site.photo_gallery_europe %}
-    <article class="location-listing">
-        <a class="location-title" href="#">
-            <h2>{{ image.title}}</h2>
-            <p>{{ image.description}}</p>
-        </a>
-        <div class="location-image">
-            <a href="{{ site.baseurl }}{{ image.link }}">
-                <img src="{{ site.baseurl }}{{ image.image_path }}" alt="{{ image.title}}"/>
-            </a>
+    <h1 class="fadeInUp header-text">Europe</h1>
+    <div class="travel">
+        <div class="destinations">
+            <button><a href="{{ site.baseurl }}/destination/europe/france.html">France</a></button>
+            <button><a href="{{ site.baseurl }}/destination/europe/germany.html">Germany</a></button>
+            <button><a href="{{ site.baseurl }}/destination/europe/hungary.html">Hungary</a></button>
         </div>
-    </article>
-    {% endfor %}
+    </div>
+    <div class="travel">
+        <div class="destinations">
+            <button><a href="{{ site.baseurl }}/destination/europe/italy.html">Italy</a></button>
+            <button><a href="{{ site.baseurl }}/destination/europe/portugal.html">Portugal</a></button>
+            <button><a href="{{ site.baseurl }}/destination/europe/spain.html">Spain</a></button>
+        </div>
+    </div>
+</section>
+<div class="container_">
+    <section class="slides">
+        <div id="slide1" class="location-listing-inner">
+            <div class="location-image-inner">
+                <img src="{{ site.baseurl }}/img/spain/Sevila.JPG" alt="Seville"/>
+            </div>
+        </div>
+        <div id="slide2" class="location-listing-inner">
+            <div class="location-image-inner">
+                <img src="{{ site.baseurl }}/img/italy/Rome3.JPG" alt="Rome"/>
+            </div>
+        </div>
+        <div id="slide3" class="location-listing-inner">
+            <div class="location-image-inner">
+                <img src="{{ site.baseurl }}/img/germany/Berlin.JPG" alt="Berlin"/>
+            </div>
+        </div>
+        <div id="slide4" class="location-listing-inner">
+            <div class="location-image-inner">
+                <img src="{{ site.baseurl }}/img/hungary/Budapeshta.JPG" alt="Budapeshta"/>
+            </div>
+        </div>
+        <div id="slide5" class="location-listing-inner">
+            <div class="location-image-inner">
+                <img src="{{ site.baseurl }}/img/france/versaille.JPG" alt="Versaille"/>
+            </div>
+        </div>
+        <div id="slide6" class="location-listing-inner">
+            <div class="location-image-inner">
+                <img src="{{ site.baseurl }}/img/portugal/Lisbon.JPG" alt="Lisbon"/>
+            </div>
+        </div>
+    </section>
+
+    <section class="thumbnails">
+        <div><a href="#slide1"><img src="{{ site.baseurl }}/img/spain/Sevila.JPG" alt="Seville, Spain"/></a></div>
+        <div><a href="#slide2"><img src="{{ site.baseurl }}/img/italy/Rome3.JPG" alt="Rome, Italy"/></a></div>
+        <div><a href="#slide3"><img src="{{ site.baseurl }}/img/germany/Berlin.JPG" alt="Berlin, gGermany"/></a></div>
+        <div><a href="#slide4"><img src="{{ site.baseurl }}/img/hungary/Budapeshta.JPG" alt="Budapeshta, Hungary"/></a></div>
+        <div><a href="#slide5"><img src="{{ site.baseurl }}/img/france/versaille.JPG" alt="Versaille, France"/></a></div>
+        <div><a href="#slide6"><img src="{{ site.baseurl }}/img/portugal/Lisbon.JPG" alt="Lisbon, Portugal"/></a></div>
+    </section>
 </div>

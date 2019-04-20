@@ -7,7 +7,8 @@
     align-items: center;
 }
 .form{
-  width: 100%;
+    width: 100%;
+    background: #EBF0F0;
 }
 .container {
     width: 55%;
@@ -20,7 +21,7 @@
     padding: 0 0 0 0.3rem;
 }
 
-h1, h4{
+h2, h4{
     text-align: center;
 }
 input, textarea {
@@ -53,6 +54,18 @@ input, textarea {
 
 .form i:before {
     padding: 0 1rem;
+}
+
+input[type=text]:focus,
+input[type=email]:focus,
+textarea:focus{
+  color: red;
+}
+
+input[type=text],
+input[type=email],
+textarea{
+  color: green;
 }
 
 input[type="button"] {
@@ -103,10 +116,54 @@ ul li {
 }
 
 .preview {
-    display: inline-block;
-    height: 70%; width: 90%;
+    display: flex;
+    overflow: hidden;
+    height: 15vmin;
+    width: 90%;
     padding: 0.5rem 0.3rem;
     border: 1px solid grey;
     font-size: inherit;
     color: rgb(138, 43, 226);
+}
+
+.preview p{
+  display: block;
+  margin: 1rem 0.5rem 0.5rem 1rem;
+}
+
+p.info{
+  display: block;
+  margin: 1rem 0.5rem 0.5rem 1rem;
+}
+
+@media screen and (max-width: 900px) {
+
+    .page-box {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .container {
+        width: 100%;
+    }
+
+    form {
+        width: 100%;
+        display: block;
+        padding-left: 7%;
+    }
+    .form p {
+        width: 100%;
+
+    }
+    .block {
+        width: 100%;
+        margin-top: 0;
+        padding-left: 10%;
+    }
+
+    iframe {
+        width: 100%;
+    }
 }

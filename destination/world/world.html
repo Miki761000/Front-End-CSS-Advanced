@@ -6,20 +6,70 @@ permalink: /destination/world/
 <section>
     <h1 class="fadeInUp header-text">Thailand</h1>
 </section>
-
-<div class="gallery">
-    {% for image in site.photo_gallery_thailand %}
-    <article class="location-listing">
-        <a class="location-title" href="#">
-            <h2>{{ image.title}}</h2>
-            <p>{{ image.description}}</p>
-        </a>
-        <div class="location-image">
-            <a href="{{ site.baseurl }}{{ image.link }}">
-                <img src="{{ site.baseurl }}{{ image.image_path }}" alt="{{ image.title}}"/>
-            </a>
+<div class="container_">
+    <section class="slides">
+        <div id="slide1" class="location-listing-inner">
+            <div class="location-image-inner">
+                <img src="{{ site.baseurl }}/img/thailand/Bangkog.JPG" alt="Bangkog"/>
         </div>
-    </article>
-    {% endfor %}
+        <div id="slide2" class="location-listing-inner">
+            <div class="location-image-inner">
+                <img src="{{ site.baseurl }}/img/thailand/Ayutthaya2.JPG" alt="Ayutthaya"/>
+            </div>
+        </div>
+        <div id="slide3" class="location-listing-inner">
+            <div class="location-image-inner">
+                <img src="{{ site.baseurl }}/img/thailand/jamesBondIsland2.JPG" alt="James Bond Island"/>
+            </div>
+        </div>
+        <div id="slide4" class="location-listing-inner">
+            <div class="location-image-inner">
+                <img src="{{ site.baseurl }}/img/thailand/phiPhi.JPG" alt="phiPhi"/>
+            </div>
+        </div>
+        <div id="slide5" class="location-listing-inner">
+            <div class="location-image-inner">
+                <img src="{{ site.baseurl }}/img/thailand/SimilanIsland.JPG" alt="Similand Island"/>
+            </div>
+        </div>
+        <div id="slide6" class="location-listing-inner">
+            <div class="location-image-inner">
+                <img src="{{ site.baseurl }}/img/thailand/SimilanIsland2.JPG" alt="Similand Island"/>
+            </div>
+        </div>
+        <div id="slide7" class="location-listing-inner">
+            <div class="location-image-inner">
+                <img src="{{ site.baseurl }}/img/thailand/SimilanIsland3.JPG" alt="Similand Island"/>
+            </div>
+        </div>
+        <div id="slide8" class="location-listing-inner">
+            <div class="location-image-inner">
+                <img src="{{ site.baseurl }}/img/thailand/jamesBondIsland.JPG" alt="James Bond Island"/>
+            </div>
+        </div>
+        <div id="slide9" class="location-listing-inner">
+            <div class="location-image-inner">
+                <img src="{{ site.baseurl }}/img/thailand/phiPhi2.JPG" alt="phiPhi"/>
+            </div>
+        </div>
+        <div id="slide10" class="location-listing-inner">
+            <div class="location-image-inner">
+                <img src="{{ site.baseurl }}/img/thailand/Ayutthaya.JPG" alt="Ayutthaya"/>
+            </div>
+        </div>
+    </section>
+
+    <section class="thumbnails">
+        <div><a href="#slide1"><img src="{{ site.baseurl }}/img/thailand/Bangkog.JPG" alt="Bangkog"/></a></div>
+        <div><a href="#slide2"><img src="{{ site.baseurl }}/img/thailand/Ayutthaya2.JPG" alt="Ayutthaya"/></a></div>
+        <div><a href="#slide3"><img src="{{ site.baseurl }}/img/thailand/jamesBondIsland2.JPG" alt="James Bond Island"/></a></div>
+        <div><a href="#slide4"><img src="{{ site.baseurl }}/img/thailand/phiPhi.JPG" alt="phiPhi"/></a></div>
+        <div><a href="#slide5"><img src="{{ site.baseurl }}/img/thailand/SimilanIsland.JPG" alt="Similand Island"/></a></div>
+        <div><a href="#slide6"><img src="{{ site.baseurl }}/img/thailand/SimilanIsland2.JPG" alt="Similand Island"/></a></div>
+        <div><a href="#slide7"><img src="{{ site.baseurl }}/img/thailand/SimilanIsland3.JPG" alt="Similand Island"/></a></div>
+        <div><a href="#slide8"><img src="{{ site.baseurl }}/img/thailand/jamesBondIsland.JPG" alt="James Bond Island"/></a></div>
+        <div><a href="#slide9"><img src="{{ site.baseurl }}/img/thailand/phiPhi2.JPG" alt="phiPhi"/></a></div>
+        <div><a href="#slide10"><img src="{{ site.baseurl }}/img/thailand/Ayutthaya.JPG" alt="Ayutthaya"/></a></div>
+    </section>
 </div>
 

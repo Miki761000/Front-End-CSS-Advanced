@@ -1,9 +1,15 @@
-.header-text {
-  display: block;
+.site-social-div section h1 {
+  display: flex;
+  width: 30%;
+}
+body > main > section > h1{
   text-align: center;
   color: var(--color-main-bgrd);
 }
 
+body > main > section > div > div{
+  justify-content: center;
+}
 section:nth-child(1) h1:after{
   display: block;
   content: '';
@@ -17,7 +23,8 @@ h2, h4 {
   color: var(--color-main-bgrd);
   display: block;
   text-align: center;
-  margin-bottom: 1rem;
+  margin-bottom: 0.5rem;
+  margin-top: 2rem;
 }
 
 p {
@@ -34,27 +41,168 @@ p {
   border: 1px solid black;
   font-weight: bold;
 }
+.travel {
+  display: flex;
+  justify-content: center;
+}
 
+.destinations {
+  display: flex;
+  width: 100%;
+}
+
+body > main > section > div > div > button {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  margin: 1rem 0 0 2.5rem;
+  text-align: center;
+  padding: 0.3rem ;
+  background: rgb(122, 171, 237);
+  border-radius: 0.5rem;
+  border-color: rgb(122, 171, 237);
+  width: 25%;
+}
+
+body > main > section > div > div > button a{
+  color: #FFF;
+  font-weight: bold;
+}
 
 button:hover:before {
   opacity: 1;
-  color: red;
+  background: #000;
+  color: white;
 }
 
 button:hover{
   transform: scale(1.2);
   z-index: 5;
-  border: 1px solid red;
+  background: #000;
+  border: 1px solid #000;
 }
 
-button a,
+/*button a,*/
 footer a {
   color: var(--color-main-bgrd);
 }
 
 button a:hover{
-  color: red;
+  background: #000;
+  color: white;
 }
 
 
+#social{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  width: 20%;
+}
 
+.site-social-div {
+  justify-items: center;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  margin: 0 0 5rem 0;
+}
+/* facebook  */
+.facebookBtn{
+  color: #4060A5;
+  background: #fff;
+}
+
+.facebookBtn:before{
+  font-family: "Font Awesome 5 Brands";
+  content: "\f09a";
+  display: inline-block;
+  padding-right: 3px;
+  vertical-align: middle;
+}
+
+.facebookBtn:hover{
+  background: #4060A5;
+  color: #fff;;
+}
+
+/* twitter  */
+.twitterBtn{
+  width: 25px;
+  height: 45px;
+  color: #00ABE3;
+  background: #fff;
+}
+
+.twitterBtn:before{
+  font-family: "Font Awesome 5 Brands";
+  content: "\f099";
+}
+
+.twitterBtn:hover{
+  background: #00ABE3;
+  color: #fff;;
+}
+
+/* google plus  */
+.googleplusBtn{
+  color: #e64522;
+  background: #fff;
+}
+
+.googleplusBtn:before{
+  font-family: "Font Awesome 5 Brands";
+  content: "\f0d5";
+}
+
+.googleplusBtn:hover{
+  background: #e64522;
+  color: #fff;;
+}
+
+/* linkedin  */
+.linkedinBtn{
+  color: #0094BC;
+  background: #fff;
+}
+
+.linkedinBtn:before{
+  font-family: "Font Awesome 5 Brands";
+  content: "\f0e1";
+}
+
+.linkedinBtn:hover{
+  background: #0094BC;
+  color: #fff;;
+}
+
+/* pinterest  */
+.pinterestBtn{
+  color: #cb2027;
+  background: #fff;
+}
+
+.pinterestBtn:before{
+  font-family: "Font Awesome 5 Brands";
+  content: "\f0d2";
+}
+
+.pinterestBtn:hover{
+  background: #cb2027;
+  color: #fff;;
+}
+
+@media screen and (max-width: 800px) {
+  div.gallery {
+    display: grid;
+    grid-template-columns: auto;
+    grid-gap: 3em;
+    padding: 0;
+    align-content: center;
+    margin: 3rem 4rem 3rem 4rem;
+  }
+  body > main > section > div > div > button{
+    margin: 0 0.3rem 0 0;
+    /*padding: 0.1rem;*/
+  }
+}

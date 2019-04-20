@@ -3,18 +3,31 @@ layout: page
 category: Destination
 permalink: /destination/europe/italy
 ---
-<div class="gallery">
-    {% for image in site.photo_gallery_italy %}
-    <article class="location-listing">
-        <a class="location-title" href="#">
-            <h2>{{ image.title}}</h2>
-            <p>{{ image.description}}</p>
-        </a>
-        <div class="location-image">
-            <a href="{{ site.baseurl }}{{ image.link }}">
-                <img src="{{ site.baseurl }}{{ image.image_path }}" alt="{{ image.title}}"/>
-            </a>
+<section>
+    <h1 class="fadeInUp header-text">Italy</h1>
+</section>
+<div class="container_">
+    <section class="slides">
+        <div id="slide1" class="location-listing-inner">
+            <div class="location-image-inner">
+                <img src="{{ site.baseurl }}/img/italy/Rome.JPG" alt="Rome"/>
+            </div>
         </div>
-    </article>
-    {% endfor %}
+        <div id="slide2" class="location-listing-inner">
+            <div class="location-image-inner">
+                <img src="{{ site.baseurl }}/img/italy/Rome2.JPG" alt="Rome"/>
+            </div>
+        </div>
+        <div id="slide3" class="location-listing-inner">
+            <div class="location-image-inner">
+                <img src="{{ site.baseurl }}/img/italy/Rome3.JPG" alt="Rome"/>
+            </div>
+        </div>
+    </section>
+
+    <section class="thumbnails">
+        <div><a href="#slide1"><img src="{{ site.baseurl }}/img/italy/Rome.JPG" alt="Rome"/></a></div>
+        <div><a href="#slide2"><img src="{{ site.baseurl }}/img/italy/Rome2.JPG" alt="Rome"/></a></div>
+        <div><a href="#slide3"><img src="{{ site.baseurl }}/img/italy/Rome3.JPG" alt="Rome"/></a></div>
+    </section>
 </div>

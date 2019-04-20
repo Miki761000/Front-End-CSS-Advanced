@@ -3,18 +3,55 @@ layout: page
 category: Destination
 permalink: /destination/europe/germany
 ---
-<div class="gallery">
-    {% for image in site.photo_gallery_germany %}
-    <article class="location-listing">
-        <a class="location-title" href="#">
-            <h2>{{ image.title}}</h2>
-            <p>{{ image.description}}</p>
-        </a>
-        <div class="location-image">
-            <a href="{{ site.baseurl }}{{ image.link }}">
-                <img src="{{ site.baseurl }}{{ image.image_path }}" alt="{{ image.title}}"/>
-            </a>
+<section>
+    <h1 class="fadeInUp header-text">Germany</h1>
+</section>
+<div class="container_">
+    <section class="slides">
+        <div id="slide1" class="location-listing-inner">
+            <div class="location-image-inner">
+                <img src="{{ site.baseurl }}/img/germany/Berlin.JPG" alt="Berlin"/>
+            </div>
         </div>
-    </article>
-    {% endfor %}
+        <div id="slide2" class="location-listing-inner">
+            <div class="location-image-inner">
+                <img src="{{ site.baseurl }}/img/germany/Berlin3.JPG" alt="Berlin"/>
+            </div>
+        </div>
+        <div id="slide3" class="location-listing-inner">
+            <div class="location-image-inner">
+                <img src="{{ site.baseurl }}/img/germany/Berlin2.JPG" alt="Berlin"/>
+            </div>
+        </div>
+        <div id="slide4" class="location-listing-inner">
+            <div class="location-image-inner">
+                <img src="{{ site.baseurl }}/img/germany/Berlin4.JPG" alt="Berlin"/>
+            </div>
+        </div>
+        <div id="slide5" class="location-listing-inner">
+            <div class="location-image-inner">
+                <img src="{{ site.baseurl }}/img/germany/Dresden.JPG" alt="Dresden"/>
+            </div>
+        </div>
+        <div id="slide6" class="location-listing-inner">
+            <div class="location-image-inner">
+                <img src="{{ site.baseurl }}/img/germany/Dresden2.JPG" alt="Dresden"/>
+            </div>
+        </div>
+        <div id="slide7" class="location-listing-inner">
+            <div class="location-image-inner">
+                <img src="{{ site.baseurl }}/img/germany/Dresden3.JPG" alt="Dresden"/>
+            </div>
+        </div>
+    </section>
+
+    <section class="thumbnails">
+        <div><a href="#slide1"><img src="{{ site.baseurl }}/img/germany/Berlin.JPG" alt="Berlin"/></a></div>
+        <div><a href="#slide2"><img src="{{ site.baseurl }}/img/germany/Berlin3.JPG" alt="Berlin"/></a></div>
+        <div><a href="#slide3"><img src="{{ site.baseurl }}/img/germany/Berlin2.JPG" alt="Berlin"/></a></div>
+        <div><a href="#slide4"><img src="{{ site.baseurl }}/img/germany/Berlin4.JPG" alt="Berlin"/></a></div>
+        <div><a href="#slide5"><img src="{{ site.baseurl }}/img/germany/Dresden.JPG" alt="Dresden"/></a></div>
+        <div><a href="#slide6"><img src="{{ site.baseurl }}/img/germany/Dresden2.JPG" alt="Dresden"/></a></div>
+        <div><a href="#slide7"><img src="{{ site.baseurl }}/img/germany/Dresden3.JPG" alt="Dresden"/></a></div>
+    </section>
 </div>

@@ -3,19 +3,67 @@ layout: page
 category: Destination
 permalink: /destination/europe/spain
 ---
-
-<div class="gallery">
-    {% for image in site.photo_gallery_spain %}
-    <article class="location-listing">
-        <a class="location-title" href="#">
-            <h2>{{ image.title}}</h2>
-            <p>{{ image.description}}</p>
-        </a>
-        <div class="location-image">
-            <a href="{{ site.baseurl }}{{ image.link }}">
-                <img src="{{ site.baseurl }}{{ image.image_path }}" alt="{{ image.title}}"/>
-            </a>
+<section>
+    <h1 class="fadeInUp header-text">Spain</h1>
+</section>
+<div class="container_">
+    <section class="slides">
+        <div id="slide1" class="location-listing-inner">
+            <div class="location-image-inner">
+                <img src="{{ site.baseurl }}/img/spain/Barcelona.JPG" alt="Barcelona"/>
+            </div>
         </div>
-    </article>
-    {% endfor %}
+        <div id="slide2" class="location-listing-inner">
+            <div class="location-image-inner">
+                <img src="{{ site.baseurl }}/img/spain/Barcelona2.JPG" alt="Barcelona"/>
+            </div>
+        </div>
+        <div id="slide3" class="location-listing-inner">
+            <div class="location-image-inner">
+                <img src="{{ site.baseurl }}/img/spain/Barcelona3.JPG" alt="Barcelona"/>
+            </div>
+        </div>
+        <div id="slide4" class="location-listing-inner">
+            <div class="location-image-inner">
+                <img src="{{ site.baseurl }}/img/spain/Madrid.JPG" alt="Madrid"/>
+            </div>
+        </div>
+        <div id="slide5" class="location-listing-inner">
+            <div class="location-image-inner">
+                <img src="{{ site.baseurl }}/img/spain/Mafrid2.JPG" alt="Madrid"/>
+            </div>
+        </div>
+        <div id="slide6" class="location-listing-inner">
+            <div class="location-image-inner">
+                <img src="{{ site.baseurl }}/img/spain/Mafrid3.JPG" alt="Madrid"/>
+            </div>
+        </div>
+        <div id="slide7" class="location-listing-inner">
+            <div class="location-image-inner">
+                <img src="{{ site.baseurl }}/img/spain/Cordoba.JPG" alt="Cordoba"/>
+            </div>
+        </div>
+        <div id="slide8" class="location-listing-inner">
+            <div class="location-image-inner">
+                <img src="{{ site.baseurl }}/img/spain/Granada.JPG" alt="Granada"/>
+            </div>
+        </div>
+        <div id="slide9" class="location-listing-inner">
+            <div class="location-image-inner">
+                <img src="{{ site.baseurl }}/img/spain/Granada2.JPG" alt="Granada"/>
+            </div>
+        </div>
+    </section>
+
+    <section class="thumbnails">
+        <div><a href="#slide1"><img src="{{ site.baseurl }}/img/spain/Barcelona.JPG" alt="Barcelona"/></a></div>
+        <div><a href="#slide2"><img src="{{ site.baseurl }}/img/spain/Barcelona2.JPG" alt="Barcelona"/></a></div>
+        <div><a href="#slide3"><img src="{{ site.baseurl }}/img/spain/Barcelona3.JPG" alt="Barcelona"/></a></div>
+        <div><a href="#slide4"><img src="{{ site.baseurl }}/img/spain/Madrid.JPG" alt="Madrid"/></a></div>
+        <div><a href="#slide5"><img src="{{ site.baseurl }}/img/spain/Mafrid2.JPG" alt="Madrid"/></a></div>
+        <div><a href="#slide6"><img src="{{ site.baseurl }}/img/spain/Mafrid3.JPG" alt="Madrid"/></a></div>
+        <div><a href="#slide7"><img src="{{ site.baseurl }}/img/spain/Cordoba.JPG" alt="Cordoba"/></a></div>
+        <div><a href="#slide8"><img src="{{ site.baseurl }}/img/spain/Granada.JPG" alt="Granada"/></a></div>
+        <div><a href="#slide9"><img src="{{ site.baseurl }}/img/spain/Granada2.JPG" alt="Granada"/></a></div>
+    </section>
 </div>

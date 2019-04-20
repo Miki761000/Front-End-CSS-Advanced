@@ -3,18 +3,48 @@ layout: page
 category: Destination
 permalink: /destination/europe/france
 ---
-<div class="gallery">
-    {% for image in site.photo_gallery_france %}
-    <article class="location-listing">
-        <a class="location-title" href="#">
-            <h2>{{ image.title}}</h2>
-            <p>{{ image.description}}</p>
-        </a>
-        <div class="location-image">
-            <a href="{{ site.baseurl }}{{ image.link }}">
-                <img src="{{ site.baseurl }}{{ image.image_path }}" alt="{{ image.title}}"/>
-            </a>
+<section class="country">
+    <h1 class="fadeInUp header-text">France</h1>
+</section>
+<div class="container_">
+    <section class="slides">
+        <div id="slide1" class="location-listing-inner">
+            <div class="location-image-inner">
+                <!--<a href="{{ site.baseurl }}{{ image.link }}">-->
+            <img src="{{ site.baseurl }}/img/france/paris2.JPG" alt="Paris, Europe"/>
+            </div>
         </div>
-    </article>
-    {% endfor %}
+        <div id="slide2" class="location-listing-inner">
+            <div class="location-image-inner">
+                <!--<a href="{{ site.baseurl }}{{ image.link }}">-->
+            <img src="{{ site.baseurl }}/img/france/paris.JPG" alt="Paris, Europe"/>
+            </div>
+        </div>
+        <div id="slide3" class="location-listing-inner">
+            <div class="location-image-inner">
+                <!--<a href="{{ site.baseurl }}{{ image.link }}">-->
+            <img src="{{ site.baseurl }}/img/france/paris3.JPG" alt="Paris, Europe"/>
+            </div>
+        </div>
+        <div id="slide4" class="location-listing-inner">
+            <div class="location-image-inner">
+                <!--<a href="{{ site.baseurl }}{{ image.link }}">-->
+            <img src="{{ site.baseurl }}/img/france/versaille.JPG" alt="Versaille, Europe"/>
+            </div>
+        </div>
+        <div id="slide5" class="location-listing-inner">
+            <div class="location-image-inner">
+                <!--<a href="{{ site.baseurl }}{{ image.link }}">-->
+            <img src="{{ site.baseurl }}/img/france/versaille2.JPG" alt="Versaille, Europe"/>
+            </div>
+        </div>
+    </section>
+
+    <section class="thumbnails">
+        <div><a href="#slide1"><img src="{{ site.baseurl }}/img/france/paris2.JPG" alt="Paris, Europe"/></a></div>
+        <div><a href="#slide2"><img src="{{ site.baseurl }}/img/france/paris.JPG" alt="Paris, Europe"/></a></div>
+        <div><a href="#slide3"><img src="{{ site.baseurl }}/img/france/paris3.JPG" alt="Paris, Europe"/></a></div>
+        <div><a href="#slide4"><img src="{{ site.baseurl }}/img/france/versaille.JPG" alt="Versaille, Europe"/></a></div>
+        <div><a href="#slide5"><img src="{{ site.baseurl }}/img/france/versaille2.JPG" alt="Versaille, Europe"/></a></div>
+    </section>
 </div>
